@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>raspicam Web Interface</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            #result {
+                max-width: 75%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Add your site or application content here -->
+        <a href="#" id="take_photo">Ota kuva</a>
+
+        <br /><br />
+
+        <img id="result" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>
+            $( "#take_photo" ).click(function() {
+                var imgUrl = "/takephoto?q=" + Math.random();
+
+                document.getElementById("result").src = imgUrl;
+            });
+        </script>
+    </body>
+</html>

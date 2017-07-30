@@ -1,0 +1,27 @@
+{
+  "name": "raspicam",
+  "version": "1.0.0",
+  "description": "Software for taking still pictures remotely with Raspberry Pi",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theel0ja/raspicam.git"
+  },
+  "author": "Elias Ojala",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theel0ja/raspicam/issues"
+  },
+  "homepage": "https://github.com/theel0ja/raspicam#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "path": "^0.12.7"
+  }
+}
